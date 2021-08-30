@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background:rgb(136, 103, 136);
+}
+
+
+button {
+    background-color: rgba(0, 0, 0, 0.844);
+    color: rgba(150, 255, 188, 0.871);
+    font-size: 2rem;
+    border: 1px solid rgb(56, 146, 122);
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px;
+}
+
+button:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+#decimal, #zero, #equal {
+    min-height: 100px;
+}
+
+.operator {
+    background-color: rgb(28, 84, 59);
+    background-image: linear-gradient(to bottom, rgb(55, 53, 53), rgba(45, 77, 63, 0.994)  );
+    color: black;
+    font-size: 2.3em;
+    font-weight: 800;
+}
+
+
+.calculator {
+    margin-top: 35px;
+    display: grid;
+    justify-content:center;
+    align-content: center;
+    min-height: 100%;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+}
+
+
+.threeSpan {
+    grid-column-end: span 3;
+    background-color: rgba(24, 41, 34, 0.919);
+    background-image: linear-gradient(to right, black, rgba(45, 77, 63, 0.994)  );
+    font-size: 3em;
+    color: rgba(243, 195, 255, 0.871);
+    border-bottom-right-radius: 20px;
+}
+
+.display {
+    border-top-left-radius: 20px;
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.761);
+    background-image: linear-gradient(to right, rgb(114, 111, 111), black);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    
+}
+
+.display #priorOutput {
+    color: rgb(160, 208, 172);
+    font-size: 1.5rem;
+}
+
+.display #currentOutput {
+    color: rgb(206, 252, 219);
+    font-size: 2.5rem;
+}
+
+#clear {
+    background-color: rgba(24, 41, 34, 0.919);
+    background-image: linear-gradient(to left, black, rgba(45, 77, 63, 0.994)  );
+    font-size: 2.5em;
+    color: rgba(206, 173, 214, 0.871);
+}
